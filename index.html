@@ -1,366 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
-    <link rel="stylesheet" href="./assets/css/style.min.css">
-    <title>Michael Mbugua Portfolio</title>
-  </head>
-
-  <body style="background-color: #181A1B;">
-    <div class="container">
-      <header id="main-header">
-        <div class="row no-gutters">
-          <div class="col-lg-4 col-md-5">
-            <img src="./assets/img/person3.jpg" alt="" style="width: 100%;" class="">
-          </div>
-          <div class="col-lg-8 col-md-7">
-            <div class="d-flex flex-column">
-              <div class="p-5 text-white" style="background-color: #365866;">
-                <div class="d-flex flex-row justify-content-between align-items-center">
-                  <h1 class="display-6 pb-0 mb-0 text-center">Michael Mbugua</h1>
-                  <br>
-
-                </div>
-
-                <!-- <div>
-                <div class="d-none d-md-block">
-                  <a href="http://twitter.com" class="text-white">
-                    <i class="fab fa-twitter p-2"> 
-                      
-                    </i>
-                  </a>
-                </div>
-                <div>
-                  <a href="http://facebook.com" class="text-white">
-                      <i class="fab fa-facebook p-2"> 
-
-                    </i>
-                  </a>
-                </div>
-                <div>
-                  <a href="http://instagram.com" class="text-white">
-                    <i class="fab fa-instagram p-2">
-
-                    </i>
-                  </a>
-                </div>
-                <div>
-                  <a href="http://github.com" class="text-white">
-                    <i class="fab fa-github p-2">
-
-                    </i>
-                  </a>
-                </div>
-              </div> -->
-
-              </div>
-
-              <div class="p-4 bg-light">
-                <p class="text-monospace mb-0 pb-0 text-center">
-                  Full Stack Web Developer
-                </p>
-                <hr>
-                <p class="text-monospace mb-0 pb-0 text-center">
-                  Software Engineer
-                </p>
-
-              </div>
-
-              <div>
-                <div class="d-flex flex-row text-white align-items-stretch text-center">
-                  <!-- <div class="port-item p-4 brk-btn" style="background-color: #B3828A B3001E;" data-toggle="collapse" -->
-                  <div class="port-item p-4" style="background-color: #B3828A;" data-toggle="collapse"
-                    data-target="#home">
-                    <i class="fas fa-home fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Home</span>
-                  </div>
-                  <div class="port-item p-4 " style="background-color: #709FB3;" data-toggle="collapse"
-                    data-target="#resume">
-                    <i class="fas fa-graduation-cap fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Resume</span>
-                  </div>
-                  <div class="port-item p-4 " style="background-color: #B3AF5F;" data-toggle="collapse"
-                    data-target="#work">
-                    <i class="fas fa-folder-open fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Work</span>
-                  </div>
-                  <div class="port-item p-4 " style="background-color: #66643B;" data-toggle="collapse"
-                    data-target="#contact">
-                    <i class="fas fa-envelope fa-2x d-block"></i>
-                    <span class="d-none d-sm-block">Contact</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Mbugua | Senior Software Engineer</title>
+  <meta name="description" content="Michael Mbugua, Senior Software Engineer in Nairobi, Kenya. Angular, TypeScript, Spring Boot, Java. 7+ years building enterprise web applications.">
+  <meta property="og:title" content="Michael Mbugua | Senior Software Engineer">
+  <meta property="og:description" content="Senior Software Engineer with 7+ years building enterprise and client-facing web applications with Angular, TypeScript and Spring Boot.">
+  <meta property="og:type" content="website">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      }
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#top" class="nav-logo">michael<span>.mbugua</span></a>
+      <div class="nav-right">
+        <div class="nav-links" id="navLinks">
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
         </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme">
+          <i class="ph ph-moon" aria-hidden="true"></i>
+          <i class="ph ph-sun" aria-hidden="true"></i>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-      </header>
+  <main id="top">
+    <section class="hero">
+      <p class="hero-eyebrow">Senior Software Engineer &middot; Nairobi, Kenya</p>
+      <h1>Reliable web software for the real world.</h1>
+      <p class="hero-sub">7+ years shipping Angular, TypeScript and Spring Boot applications, from banking systems used by millions to county revenue platforms.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">View my work</a>
+        <a href="./Michael_Mbugua_Resume.pdf" class="btn btn-ghost" download>Download CV</a>
+      </div>
+    </section>
 
-      <!-- HOME -->
-      <div id="home" class="collapse show">
-        <div class="card card-body text-white py-5" style="background-color: #B3828A;">
+    <section class="section about">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <p>I&rsquo;m a full-stack engineer focused on Angular, TypeScript and Java/Spring. At Equity Bank I build and maintain the front end of equityonline, including the Save and Invest product, through a strict CI/CD pipeline with automated security checks and mandatory test coverage.</p>
+        <p>Before that I spent years delivering client-facing and enterprise software at Eclectics International, Compulynx and M2M Systems: insurance apps, biometric banking solutions, county revenue systems, bus-tracking and logistics platforms. I care about clean component architecture, real test coverage and code that survives production.</p>
+      </div>
+    </section>
 
-          <h2>Welcome</h2>
+    <section class="section projects" id="work">
+      <h2 class="section-title">Selected work</h2>
+      <div class="projects-list">
+        <a href="https://equityonline.equitygroupholdings.com/" target="_blank" rel="noopener" class="project-row">
+          <div class="project-main">
+            <h3>Equity Online</h3>
+            <p>Front end of Equity Bank's internet banking platform, including the Save and Invest product, shipped through Azure CI/CD with automated security scans and mandatory test coverage.</p>
+          </div>
+          <div class="project-meta">
+            <span>Angular</span><span>TypeScript</span><span>Equity Bank</span>
+          </div>
+        </a>
+        <a href="https://hotelsapphire.co.ke/" target="_blank" rel="noopener" class="project-row">
+          <div class="project-main">
+            <h3>Hotel Sapphire</h3>
+            <p>Official website for a luxury hotel in Mombasa CBD: room presentation, booking-oriented pages and responsive SEO-friendly delivery.</p>
+          </div>
+          <div class="project-meta">
+            <span>Angular</span><span>Front end & back end</span>
+          </div>
+        </a>
+        <a href="https://lukenyauniversity.ac.ke/" target="_blank" rel="noopener" class="project-row">
+          <div class="project-main">
+            <h3>Lukenya University</h3>
+            <p>University site covering programmes, admissions and campus information, built for a wide range of devices and low bandwidth.</p>
+          </div>
+          <div class="project-meta">
+            <span>Front end & back end</span>
+          </div>
+        </a>
+        <a href="https://movaraconsult.com/" target="_blank" rel="noopener" class="project-row">
+          <div class="project-main">
+            <h3>Movara Consult</h3>
+            <p>Corporate website for a consultancy firm: content structure, responsive layout and deployment.</p>
+          </div>
+          <div class="project-meta">
+            <span>Front end & back end</span>
+          </div>
+        </a>
+        <a href="https://mac-haven-app.web.app/" target="_blank" rel="noopener" class="project-row">
+          <div class="project-main">
+            <h3>MacHaven Agency</h3>
+            <p>Web application for an agency business, built from Figma designs with a UX designer on the team.</p>
+          </div>
+          <div class="project-meta">
+            <span>Firebase hosting</span>
+          </div>
+        </a>
+      </div>
+      <p class="projects-note">Client work delivered as developer with a UX designer providing Figma designs.</p>
+      <div class="shots-row" aria-label="Project screenshots">
+        <a href="https://equityonline.equitygroupholdings.com/" target="_blank" rel="noopener" class="shot">
+          <div class="shot-pending" role="img" aria-label="Equity Online internet banking platform screenshot coming soon">
+            <span>Screenshot coming soon</span>
+          </div>
+          <span>Equity Online</span>
+        </a>
+        <a href="https://hotelsapphire.co.ke/" target="_blank" rel="noopener" class="shot">
+          <img src="./assets/img/screens/hotelsapphire.jpg" alt="Hotel Sapphire website homepage" loading="lazy" width="1440" height="900">
+          <span>Hotel Sapphire</span>
+        </a>
+        <a href="https://lukenyauniversity.ac.ke/" target="_blank" rel="noopener" class="shot">
+          <img src="./assets/img/screens/lukenya.jpg" alt="Lukenya University website homepage" loading="lazy" width="1440" height="900">
+          <span>Lukenya University</span>
+        </a>
+        <a href="https://movaraconsult.com/" target="_blank" rel="noopener" class="shot">
+          <img src="./assets/img/screens/movara.jpg" alt="Movara Consult website homepage" loading="lazy" width="1440" height="900">
+          <span>Movara Consult</span>
+        </a>
+        <a href="https://mac-haven-app.web.app/" target="_blank" rel="noopener" class="shot">
+          <img src="./assets/img/screens/machaven.jpg" alt="MacHaven Agency web application homepage" loading="lazy" width="1440" height="900">
+          <span>MacHaven Agency</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <p class="timeline-date">Aug 2025 &ndash; Present</p>
+          <h3>Front-End Software Developer (Angular)</h3>
+          <p class="timeline-org">Equity Bank, Kenya</p>
+          <p>Building equityonline&rsquo;s Save and Invest front end. Ship every feature through Azure CI/CD with automated vulnerability scans; Jest/Vitest tests as a pipeline gate at 95%+ coverage. Review code for 3&ndash;4 engineers weekly.</p>
+        </li>
+        <li class="timeline-item">
+          <p class="timeline-date">Mar 2022 &ndash; Aug 2025</p>
+          <h3>Front-End Software Developer (Angular)</h3>
+          <p class="timeline-org">Eclectics International</p>
+          <p>Designed and built Angular applications and reusable components for banking and insurance clients. Delivered a Salary Advances app and an Angular 18 health-and-fitness app for Jubilee Insurance; built components spanning USSD, internet banking and mobile channels. GitLab CI/CD with SonarQube quality gates.</p>
+        </li>
+        <li class="timeline-item">
+          <p class="timeline-date">Mar 2021 &ndash; Mar 2022</p>
+          <h3>Full-Stack Developer (Angular / Spring Boot)</h3>
+          <p class="timeline-org">Compulynx Limited, Kenya</p>
+          <p>Built a full-stack E-Revenue application (Spring + Angular) adopted by multiple Kenyan counties including Siaya and Baringo. Worked on biometric banking solutions for Post Bank Uganda, Stima Sacco, Equity Bank and KCB Kenya.</p>
+        </li>
+        <li class="timeline-item">
+          <p class="timeline-date">Mar 2019 &ndash; Feb 2021</p>
+          <h3>Software Developer (JavaScript)</h3>
+          <p class="timeline-org">M2M Systems Ltd</p>
+          <p>Built a logistics platform tracking driver statistics and incidents, a real-time school bus tracking system streaming live location to parents&rsquo; phones, and a security management platform for guards, vehicles and visitor logs.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section skills" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-groups">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <p>Angular, TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS, RxJS, NgRx, Tailwind, Bootstrap, Angular Material, PrimeNG</p>
         </div>
-
-        <div class="card card-body py-5">
-          <h3>About</h3>
-          <p>
-
-
-
-            Based in Nairobi, I offer more than 2 years experience in designing, developing,
-            testing, deployment and maintenance of Web Applications. I'm well versed with
-            the Angular Framework for frontend implementation and NodeJS and Spring for backend implementation.
-
-            I have also had some experience with Microsoft Azure in WebApps, Serverless Functions and the Azure SQL
-            database.
-            <br>
-            <br>
-            I also do a bit of UI prototyping on the side.
-
-
-          </p>
-          <hr>
-          <h4>Angular</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar" style="width:100%; background-color: #B34D5F;"></div>
-          </div>
-          <h4>Ionic</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar " style="width:100%; background-color: #B34D5F;"></div>
-          </div>
-          <h4>Spring</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar " style="width:90%; background-color: #B34D5F;"></div>
-          </div>
-          <h4>Node Js</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar " style="width:80%; background-color: #B34D5F;"></div>
-          </div>
-          <h4>Azure</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar " style="width:70%; background-color: #B34D5F;"></div>
-          </div>
+        <div class="skill-group">
+          <h3>Backend & APIs</h3>
+          <p>Java, Spring / Spring Boot, RESTful APIs, GraphQL, WebSockets</p>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud & DevOps</h3>
+          <p>Docker, Kubernetes, AWS, GitLab CI/CD, Azure Pipelines, Git</p>
+        </div>
+        <div class="skill-group">
+          <h3>Testing & Quality</h3>
+          <p>Jest, Vitest, SonarQube, unit and functional test design, code review</p>
         </div>
       </div>
+    </section>
 
-      <!-- RESUME -->
-      <div id="resume" class="collapse">
-        <div class="card card-body text-white py-5" style="background-color: #709FB3;">
-          <h2>My Resume</h2>
-          <p class="lead">Here are some of the places I hace had the chance of working in.</p>
+    <section class="section education" id="education">
+      <h2 class="section-title">Education & certifications</h2>
+      <div class="edu-wrap">
+        <div class="edu-item">
+          <h3>BSc Computer Science</h3>
+          <p>Maseno University, Second Class Upper Division, 2017</p>
         </div>
-
-        <div class="card card-body py-5">
-          <h3>Where Have I Worked?</h3>
-          <p></p>
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">M2M Systems</h4>
-                <p class="card-text">Software Development. Projects on Microsoft Kaizala hosted on Azure.</p>
-                <p class="p-2 mb-3 bg-dark text-white">
-                  Position: Full Stack Developer
-                </p>
-                <p class="p-2 mb-3 bg-dark text-white">
-                  Phone: (254) 708-453-901
-                </p>
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">Dates: 2018 - 2019</h6>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Larice Limited</h4>
-                <p class="card-text">Software development. Applications using Spring and Angular.</p>
-                <p class="p-2 mb-3 bg-dark text-white">
-                  Position: Web Designer
-                </p>
-                <p class="p-2 mb-3 bg-dark text-white">
-                  Phone: (254) 756-998-153
-                </p>
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">Dates: 2019 - 2020</h6>
-              </div>
-            </div>
-
-
-
-          </div>
+        <div class="edu-item">
+          <h3>Cisco CCNA</h3>
+          <p>Introduction to Networks, Routing and Switching Essentials, Scaling Networks</p>
+        </div>
+        <div class="edu-item">
+          <h3>Huawei</h3>
+          <p>Overview of AI, Exploring the Intelligent World 2030</p>
         </div>
       </div>
+    </section>
 
-      <!-- WORK -->
-      <div id="work" class="collapse">
-        <div class="card card-body text-light py-5" style="background-color: #B3AF5F;">
-          <h2>My Work</h2>
-          <p class="lead">Some projects in Angular, Spring and plain html5, CSS javascript and bootstrap.</p>
-        </div>
-
-        <div class="card card-body py-5">
-
-          <h3 class="text-center">What I Have Built</h3>
-          <p></p>
-          <div class="row d-flex justify-content-center">
-
-            <div class="col-md-3">
-              <a href="./assets/img/works/4.jpg" data-toggle="lightbox">
-                <img src="./assets/img/works/4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="./assets/img/works/3.jpg" data-toggle="lightbox">
-                <img src="./assets/img/works/3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-
-          <div class="row mt-4 d-flex justify-content-center">
-
-            <div class="col-md-3">
-              <a href="./assets/img/works/1.jpg" data-toggle="lightbox">
-                <img src="./assets/img/works/1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="./assets/img/works/2.jpg" data-toggle="lightbox">
-                <img src="./assets/img/works/2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-        </div>
+    <section class="section contact" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-lead">Open to interesting problems and conversations. The fastest way to reach me is email.</p>
+      <a class="contact-email" href="mailto:michaelmbugua.me@gmail.com">michaelmbugua.me@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://github.com/colMike" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/michael-mbugua-5b849b6" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="./Michael_Mbugua_Resume.pdf" download>Download CV</a>
       </div>
+    </section>
+  </main>
 
-      <!-- CONTACT -->
-      <div id="contact" class="collapse">
-        <div class="card card-body text-white py-5" style="background-color: #66643B;">
-          <h2>Contact</h2>
-          <p class="lead">Feel free to send a message below or reach me on any of my socials.</p>
-          <!-- 
-          <div>
-            <div class="">
-              <a href="http://twitter.com" class="text-white">
-                <i class="fab fa-twitter p-2">
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Michael Mbugua</p>
+  </footer>
 
-                </i>
-              </a>
-            </div>
-            <div class="d-inline"> 
-              <a href="http://facebook.com" class="text-white">
-                <i class="fab fa-facebook p-2">
-
-                </i>
-              </a>
-            </div>
-            <div class="d-inline">
-              <a href="http://instagram.com" class="text-white">
-                <i class="fab fa-instagram p-2">
-
-                </i>
-              </a>
-            </div>
-            <div class="d-inline">
-              <a href="http://github.com" class="text-white">
-                <i class="fab fa-github p-2">
-
-                </i>
-              </a>
-            </div>
-          </div> -->
-        </div>
-
-        <div class="card card-body py-5">
-          <h3>Get In Touch</h3>
-          <!-- <p>Feel free to send a message.</p> -->
-          <form>
-            <div class="form-group">
-              <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                  <span class="input-group-text text-white" style="background-color: #66643B;">
-                    <i class="fas fa-user"></i>
-                  </span>
-                </div>
-                <input type="text" class="form-control bg-light text-dark" placeholder="Name">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                  <span class="input-group-text text-white" style="background-color: #66643B;">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-                <input type="email" class="form-control bg-light text-dark" placeholder="Email">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                  <span class="input-group-text text-white" style="background-color: #66643B;">
-                    <i class="fas fa-pencil-alt"></i>
-                  </span>
-                </div>
-                <textarea class="form-control bg-light text-dark" placeholder="Message"></textarea>
-              </div>
-            </div>
-
-            <input type="submit" value="Submit" class="btn btn-block btn-lg"
-              style="background-color: #66643B; color: white;">
-          </form>
-        </div>
-      </div>
-
-
-      <!-- FOOTER -->
-      <footer id="main-footer" class="p-5 text-white" style="background-color: #365866;">
-        <div class="row">
-          <div class="col-md-6">
-            <a href="./assets/Resume MichaelMbugua.pdf" class="btn btn-outline-light" target="_blank">
-              <i class="fas fa-cloud"></i> Download Resume
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-
-    <script>
-      $('.port-item').click(function () {
-        $('.collapse').collapse('hide');
-      });
-
-      $(document).on('click', '[data-toggle="lightbox"]', function (e) {
-        e.preventDefault();
-        $(this).ekkoLightbox();
-      });
-    </script>
-  </body>
-
+  <script src="./assets/js/main.js" defer></script>
+</body>
 </html>
