@@ -13,7 +13,7 @@
       var t = null;
       try { t = localStorage.getItem("theme"); } catch (e) {}
       if (t !== "light" && t !== "dark") {
-        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        t = "light";
       }
       document.documentElement.dataset.theme = t;
     })();
@@ -126,6 +126,10 @@
       </div>
       <p class="projects-note">Client work delivered as developer with a UX designer providing Figma designs.</p>
       <div class="shots-row" aria-label="Project screenshots">
+        <a href="https://apiv3.maishafiti.com/" target="_blank" rel="noopener" class="shot">
+          <img src="./assets/img/screens/maishafiti.jpg" alt="MaishaFiti Admin Portal login page" loading="lazy" width="1440" height="900">
+          <span>MaishaFiti Admin Portal</span>
+        </a>
         <a href="https://equityonline.equitygroupholdings.com/" target="_blank" rel="noopener" class="shot">
           <div class="shot-pending" role="img" aria-label="Equity Online internet banking platform screenshot coming soon">
             <span>Screenshot coming soon</span>
